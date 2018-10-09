@@ -6,4 +6,4 @@ Data collected via a online survey includes classTime, subjectType,	hungry,	weat
 
 ## Known Issues
 - Misclassification Rate Calculation
-- Not tested against concept more than 2
+- Only tested against sample data
