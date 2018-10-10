@@ -4,11 +4,11 @@ Sl No,classTime,subjectType,hungry,weather,interest
 2,Afternoon,Programing,No,Mild,Yes
 3,Afternoon,Problematic,No,Cool,Yes
 4,Afternoon,Theory,No,Mild,Yes
-5,Morning,Theory,No,Cool,No
+5,Morning,Theory,No,Cool,Nil
 6,Morning,Programing,Yes,Cool,Yes
 7,Morning,Practicle,No,Cool,Yes
 8,Morning,Practicle,No,Mild,Yes
-9,Afternoon,Theory,No,Mild,Yes
+9,Afternoon,Theory,No,Mild,Nil
 10,Weekend,Theory,Yes,Cool,No
 11,Afternoon,Practicle,No,Hot,No
 12,Weekend,Theory,No,Hot,No
@@ -17,10 +17,10 @@ Sl No,classTime,subjectType,hungry,weather,interest
 15,Afternoon,Programing,No,Cool,Yes
 16,Morning,Problematic,No,Cool,Yes
 17,Afternoon,Theory,No,Cool,Yes
-18,Weekend,Theory,No,Cool,No
+18,Weekend,Theory,No,Cool,Nil
 19,Morning,Theory,No,Cool,Yes
 20,Afternoon,Practicle,No,Cool,Yes
-21,Weekend,Programing,Yes,Hot,No
+21,Weekend,Programing,Yes,Hot,Nil
 22,Weekend,Programing,No,Mild,No
 23,Weekend,Practicle,No,Mild,No
 24,Afternoon,Problematic,No,Cool,Yes

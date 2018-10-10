@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[321]:
+# In[11]:
 
 
 def probAttr(data,attr,val):
@@ -11,7 +11,7 @@ def probAttr(data,attr,val):
     return cnt[val],cnt[val]/Total
 
 
-# In[322]:
+# In[12]:
 
 
 def probAttrConcept(data,attr,val,concept,cVal,countConcept):
@@ -33,15 +33,17 @@ def probAttrConcept(data,attr,val,concept,cVal,countConcept):
     return prob
 
 
-# In[390]:
+# In[13]:
 
 
 def train(data,AttributeList,concept):
     Attr={}
     probability_list={}
+    #Get attribute values
     for a in AttributeList:
         Attr[a] = list(set(data[a]))
-        
+    
+    #print(Attr,AttributeList)   
     conceptVals = list(set(data[concept]))
     conceptProbs = {}
     countConcept={}
@@ -63,15 +65,15 @@ def train(data,AttributeList,concept):
     return conceptProbs,AttrConcept,probability_list
 
 
-# In[391]:
+# In[14]:
 
 
 def test(examples,AttributeList,conceptProbs,AttrConcept,probability_list,data,concept_list,Total):
     misclassification_count=0
-#     Total = len(examples)-1
+    Total1 = len(examples)-1
     for ex in range(1,len(examples)):
         px={}
-        for x in range(1,len(examples[ex])-1):
+        for x in range(1,len(examples[ex])):
             for a in AttributeList:
                 for c in concept_list:
                     if examples[ex][x] in AttrConcept[a][c]:  
@@ -82,14 +84,14 @@ def test(examples,AttributeList,conceptProbs,AttrConcept,probability_list,data,c
         classification = max(px,key=px.get)
         if(classification!=examples[ex][-1]):
             misclassification_count+=1
-    misclassification_rate=misclassification_count*100/Total
+    misclassification_rate=misclassification_count*100/Total1
     accuracy=100-misclassification_rate
     print("Misclassification Count={}".format(misclassification_count))
     print("Misclassification Rate={}%".format(misclassification_rate))
     print("Accuracy={}%".format(accuracy))
 
 
-# In[392]:
+# In[15]:
 
 
 def main():
@@ -112,7 +114,7 @@ def main():
     test(examples,AttributeList,conceptProbs,AttrConcept,probability_list,data,concept_list,Total)
 
 
-# In[393]:
+# In[16]:
 
 
 main()
