@@ -1,4 +1,4 @@
-# NaiveBayes
+# Naive Bayes VTU Lab Program
 - Support more than 2 Concepts to be classified
 - Tested against dataset with more than 2 concepts
 
@@ -13,6 +13,7 @@
 
 ## Dataset
 Data collected via a online survey includes classTime, subjectType,	hungry,	weather, interest columns where interest in classs is been predicted.
+Another dataset is "PlayTennis"
 
 ## Known Issues
 - Misclassification Rate Calculation
